@@ -9,6 +9,20 @@ body{
     overflow-x: hidden;
     font-family:"futura-pt";
 }
+/* width */
+::-webkit-scrollbar {
+    width: 14px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:black; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#eb4a4a; 
+  }
 .img-brand img{
     max-width: 100%;
     width: 140px;
@@ -16,7 +30,7 @@ body{
 }
  .btn-wrap a{
    color: #FFFFFF;
-   background-color: red;
+   background-color: #eb4a4a;
    padding: 12px 50px;
    border-radius: 2px;
    text-transform: uppercase;
@@ -130,9 +144,11 @@ letter-spacing: 2px;
     mix-blend-mode: multiply;
     height: 100%;
     border-radius: 12px;
-    
-    
+    transition: all 0.3s ease-in-out;
 
+}
+.img-contentbox:hover{
+    transform: translateY(-8px);
 }
 
 .text-center h2{
